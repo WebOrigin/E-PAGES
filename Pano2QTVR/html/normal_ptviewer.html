@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+		<title>{$userdata.title$}</title>
+		<script language="javascript" src="p2q_embed_object.js">
+		{$$p2q_embed_object.js$}
+		</script>
+		<style type="text/css" title="Default">
+			body, div, h1, h2, h3, span, p {
+				font-family: Verdana,Arial,Helvetica,sans-serif;
+				color: Black;
+			}
+			body {
+			  font-size: 10pt;
+			  background : #ffffff; 
+			}
+			td,tr,table {
+				font-size: 10pt;
+				border : 1 Black;
+				border-left-style : solid;
+				border-bottom-style : solid;
+				border-top-style : solid;
+				border-right-style : solid;
+				border-left-width : 1;
+				border-right-width : 1;
+				border-top-width : 1;
+				border-bottom-width : 1;
+				border-color : #777777;
+				background : #eeeeee; 
+			}
+			h1 {
+				font-size: 18pt;
+			}
+			h2 {
+				font-size: 14pt;
+			}
+		</style>	
+	</head>
+	<body bgcolor="#ffffff">
+		<h1>{$userdata.title$}</h1>
+		<p align="left">
+		<script language="javascript">
+<!--
+			if (window.p2q_Version) {
+				p2q_EmbedPtviewer('{$_output$}','{$movie.width$}','{$movie.height$}',
+				   'showToolbar','true',
+				   'imgLoadFeedback','true',
+				   'order','{$_ptorder$}',
+				   'fov','{$fov.default$}',
+				   'pan','{$pan.default$}',
+				   'tilt','{$tilt.default$}');
+			} else {	
+				document.writeln('<br><b>p2q_embed_object.js is not included! Please copy this file into your html directory.</b><br>');
+			}
+//-->
+		</script>
+		<noscript>
+			<br><b>Please enable Javascript!</b></br>
+		</noscript>
+		<br><br>
+		<table cellpadding="5" cellspacing="0">
+			<tr>
+				<td><b>Description</b></td>
+				<td>{$userdata.description$}</td>
+			</tr>
+			<tr>
+				<td><b>Author</b></td>
+				<td>{$userdata.author$}</td>
+			</tr>
+			<tr>
+				<td><b>Date</b></td>
+				<td>{$userdata.date$}</td>
+			</tr>
+			<tr>
+				<td><b>Copyright</b></td>
+				<td>{$userdata.copyright$}</td>
+			</tr>
+		</table>
+		<br>
+		<span style="font-size: 8pt;">Created with <a target="_blank" href="http://www.pano2qtvr.com">Pano2QTVR</a></span>
+	</body>
+
+</html>
